@@ -138,9 +138,9 @@ publishing {
             artifact sourcesJar
             artifact javadocJar
             pom {
-                name = 'webank-blockchain-java-crypto'
-                description = 'webank blockchain java crypto library'
-                url = 'https://github.com/WeBankBlockchain/Crypto-Java-Lib'
+                name = 'java-crypto'
+                description = 'a java sub-cryptography library'
+                url = 'https://github.com/AlleriaWindrunner/java-crypto.git'
 
                 licenses {
                     license {
@@ -150,22 +150,22 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = 'zhangsan'
-                        name = 'zhangsan'
-                        email = 'zhangsan@example.com'
+                        id = 'AlleriaWindrunner'
+                        name = 'AlleriaWindrunner'
+                        email = 'eleven.hm@vip.163.com'
                     }
                 }
                 scm {
-                    connection = 'https://github.com/WeBankBlockchain/Crypto-Java-Lib.git'
-                    url = 'https://github.com/WeBankBlockchain/Crypto-Java-Lib.git'
+                    connection = 'https://github.com/AlleriaWindrunner/java-crypto.git'
+                    url = 'https://github.com/AlleriaWindrunner/java-crypto.git'
                 }
             }
         }
     }
     repositories {
         maven {
-            def releasesRepoURL = "https://oss.sonatype.org/service/local/staging/deploy/maven2"
-            def snapshotsRepoURL = "https://oss.sonatype.org/content/repositories/snapshots"
+            def releasesRepoURL = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2"
+            def snapshotsRepoURL = "https://s01.oss.sonatype.org/content/repositories/snapshots"
             url = !version.endsWith("SNAPSHOT") ? releasesRepoURL : snapshotsRepoURL
 
             credentials {
