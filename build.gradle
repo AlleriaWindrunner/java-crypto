@@ -18,8 +18,9 @@ repositories {
     maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
     mavenCentral()
 }
-group = 'io.github.alleriaWindrunner'
+
 version = '1.0.0'
+group = 'io.github.alleriawindrunner'
 
 ext {
     if (!project.hasProperty("ossrhUsername")) {
